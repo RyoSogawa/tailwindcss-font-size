@@ -6,7 +6,7 @@ test
 .eslintrc.js
 .gitignore
 .node-version
-.pretterignore
+.prettierignore
 .prettierrc
 CHANGELOG.md
 LICENSE
