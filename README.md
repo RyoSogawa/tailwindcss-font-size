@@ -1,33 +1,56 @@
-# npm-package-boilerplate
+# tailwindcss-font-size
 
-A simple boilerplate for npm package with TypeScript.
+A plugin that provides utilities for font-size by 'px' and 'rem'.
 
-## Dependencies
-- Node.js 16.13.0
-- TypeScript 4.5.4
-- eslint
-- prettier
-- jest
-  - @swc/jest
-
-
-## Getting started
-### Installation
-Clone this repository:
+## Installation
+Install the plugin from npm:
 ```
-git clone git@github.com:RyoSogawa/npm-package-boilerplate.git
-``` 
+# Using npm
+npm install tailwindcss-font-size
 
-Open the directory and npm install:
-```
-cd npm-package-boilerplate
-yarn
+# Using Yarn
+yarn add tailwindcss-font-size
 ```
 
-(Optional) Remove boilerplate data and commit:
-```
-rm -rf .git && git init && git add . && git commit -m "Initial commit"
+Then add the plugin to your `tailwind.config.js` file:
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('tailwindcss-font-size'),
+    // ...
+  ],
+}
 ```
 
-## Reference 
-https://github.com/hebertcisco/ts-npm-package-boilerplate
+## Usage
+Use the `fsz-{n}px` or `fsz-{n}r` utilities to set font-size.
+`px` is for pixel, `r` is for root font-size.
+
+```html
+<p class="fsz-18px">This font size is 18px</p>
+<p class="fsz-18r">This font size is 1.125rem (if base font size is 16px)</p>
+```
+
+## Configuration
+You can configure the plugin by passing options to its constructor.
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('tailwindcss-font-size')({ 
+      baseSize: 16, // html font-size
+      minSize: 10,
+      maxSize: 128 
+    }),
+    // ...
+  ],
+}
+```
+

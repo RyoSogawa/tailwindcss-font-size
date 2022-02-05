@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/npm-package-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/npm-package-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tailwindcss-font-size.iml" filepath="$PROJECT_DIR$/.idea/tailwindcss-font-size.iml" />
     </modules>
   </component>
 </project>
