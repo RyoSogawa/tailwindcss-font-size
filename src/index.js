@@ -6,8 +6,10 @@ const fontSize = plugin.withOptions(function (
   return function ({ addUtilities, e }) {
     const { baseSize, minSize, maxSize } = options
 
+    const length = maxSize - minSize + 1
+
     const rems = Object.fromEntries(
-      [...Array(maxSize)].map((_, index) => {
+      [...Array(length)].map((_, index) => {
         const px = index + minSize
         const className = `fsz-${px}r`
         return ['.' + e(className), { 'font-size': `${px / baseSize}rem` }]
@@ -15,7 +17,7 @@ const fontSize = plugin.withOptions(function (
     )
 
     const pxs = Object.fromEntries(
-      [...Array(maxSize)].map((_, index) => {
+      [...Array(length)].map((_, index) => {
         const px = index + minSize
         const className = `fsz-${px}px`
         return ['.' + e(className), { 'font-size': `${px}px` }]
