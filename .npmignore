@@ -1,0 +1,13 @@
+.husky
+.idea
+test
+
+.eslintignore
+.eslintrc.js
+.gitignore
+.node-version
+.pretterignore
+.prettierrc
+CHANGELOG.md
+LICENSE
+README.md
