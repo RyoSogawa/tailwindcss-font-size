@@ -6,9 +6,6 @@
   "repository": "https://github.com/RyoSogawa/tailwindcss-font-size.git",
   "bugs": "https://github.com/RyoSogawa/tailwindcss-font-size/issues",
   "homepage": "https://github.com/RyoSogawa/tailwindcss-font-size",
-  "engines": {
-    "node": "16.x"
-  },
   "keywords": [
     "tailwindcss",
     "plugin",
