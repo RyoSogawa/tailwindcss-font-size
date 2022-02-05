@@ -2,6 +2,8 @@
 
 A plugin that provides utilities for font-size by 'px' and 'rem'.
 
+## [Warning] This library is not tested.
+
 ## Installation
 Install the plugin from npm:
 ```
@@ -31,12 +33,14 @@ Use the `fsz-{n}px` or `fsz-{n}r` utilities to set font-size.
 `px` is for pixel, `r` is for root font-size.
 
 ```html
-<p class="fsz-18px">This font size is 18px</p>
-<p class="fsz-18r">This font size is 1.125rem (if base font size is 16px)</p>
+<p class="fsz-32px">This font size is 32px</p>
+<p class="fsz-32r">This font size is 2rem (if option.baseSize is 16px)</p>
 ```
 
 ## Configuration
 You can configure the plugin by passing options to its constructor.
+
+Parameters and default values are below.
 ```js
 // tailwind.config.js
 module.exports = {
@@ -53,4 +57,3 @@ module.exports = {
   ],
 }
 ```
-
