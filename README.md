@@ -6,7 +6,7 @@ A plugin that provides utilities for font-size by `px` and `rem` ( **px to rem**
 
 [demo(playground)](https://codesandbox.io/s/tailwindcss-font-size-3ixwv?file=/public/index.html)
 
-Deference between TailwindCSS's JIT(Just in Time) is that this plugin calculates the rem font-size based on the font-size of the root element.
+Deference from TailwindCSS's JIT(Just in Time) is that this plugin calculates the rem font-size based on the font-size of the root element.
 ```html
 <!-- TailwindCSS JIT -->
 <p class="text-[22px]">Good</p>
