@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/tailwindcss-font-size.svg)](http://badge.fury.io/js/tailwindcss-font-size)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-A plugin that provides utilities for font-size by 'px' and 'rem'.
+A plugin that provides utilities for font-size by `px` and `rem`.
 
 ## Installation
 Install the plugin from npm:
@@ -57,3 +57,9 @@ module.exports = {
   ],
 }
 ```
+
+## Contribution
+Please feel free to open an issue or make a pull request.
+
+## License
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
