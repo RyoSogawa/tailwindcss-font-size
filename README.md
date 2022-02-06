@@ -2,7 +2,9 @@
 [![npm version](https://badge.fury.io/js/tailwindcss-font-size.svg)](http://badge.fury.io/js/tailwindcss-font-size)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-A plugin that provides utilities for font-size by `px` and `rem`.
+A plugin that provides utilities for font-size by `px` and `rem` ( px to rem ).
+
+[demo(playground)](https://codesandbox.io/s/tailwindcss-font-size-3ixwv?file=/public/index.html)
 
 ## Installation
 Install the plugin from npm:
@@ -30,7 +32,7 @@ module.exports = {
 
 ## Usage
 Use the `fsz-{n}px` or `fsz-{n}r` utilities to set font-size.
-`px` is for pixel, `r` is for root font-size.
+`px` is for pixel, `r` is for rem ( px to rem ).
 
 ```html
 <p class="fsz-32px">This font size is 32px</p>
