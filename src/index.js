@@ -11,7 +11,7 @@ const fontSize = plugin.withOptions(function (
     const rems = Object.fromEntries(
       [...Array(length)].map((_, index) => {
         const px = index + minSize
-        const className = `fsz-${px}r`
+        const className = `fsz-${px}ptr`
         return ['.' + e(className), { 'font-size': `${px / baseSize}rem` }]
       })
     )

@@ -31,12 +31,12 @@ module.exports = {
 ```
 
 ## Usage
-Use the `fsz-{n}px` or `fsz-{n}r` utilities to set font-size.
-`px` is for pixel, `r` is for rem ( px to rem ).
+Use the `fsz-{n}px` or `fsz-{n}ptr` utilities to set font-size.
+`px` is for pixel, `ptr` is for rem ( px to rem ).
 
 ```html
 <p class="fsz-32px">This font size is 32px</p>
-<p class="fsz-32r">This font size is 2rem (if option.baseSize is 16px)</p>
+<p class="fsz-32ptr">This font size is 2rem (if option.baseSize is 16px)</p>
 ```
 
 ## Configuration
