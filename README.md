@@ -2,9 +2,20 @@
 [![npm version](https://badge.fury.io/js/tailwindcss-font-size.svg)](http://badge.fury.io/js/tailwindcss-font-size)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-A plugin that provides utilities for font-size by `px` and `rem` ( px to rem ).
+A plugin that provides utilities for font-size by `px` and `rem` ( **px to rem** ).
 
 [demo(playground)](https://codesandbox.io/s/tailwindcss-font-size-3ixwv?file=/public/index.html)
+
+Deference between TailwindCSS's JIT(Just in Time) is that this plugin calculates the rem font-size based on the font-size of the root element.
+```html
+<!-- TailwindCSS JIT -->
+<p class="text-[22px]">Good</p>
+<p class="text-[1.375rem]">🧮 Needs Calculation...</p>
+
+<!-- This Plugin -->
+<p class="fsz-22px">Good</p>
+<p class="fsz-22ptr">🤓 No Calculation is Needed</p>
+```
 
 ## Installation
 Install the plugin from npm:
