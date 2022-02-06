@@ -1,5 +1,6 @@
 {
   "name": "tailwindcss-font-size",
+  "description": "Tailwind CSS plugin to add font-size property in px and rem",
   "author": "RyoSogawa",
   "version": "0.1.2",
   "license": "MIT",
